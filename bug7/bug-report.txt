@@ -4,5 +4,7 @@
 
 Every row in the transaction list has a weird comma preceding it...
 
+*could not replicate bug* - Pia Soy
+
 *******************************************************
 *******************************************************
