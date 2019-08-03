@@ -32,10 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById('transactions').innerHTML = renderTransactions(fullTransactionData);
 
 	document.getElementById('search-input').addEventListener('input', function (e) {
+		//make searchString to all lowercase
 		var searchString = e.target.value.toLowerCase();
 	
 
 		var filteredData = fullTransactionData.filter(function (transaction) {
+			//make transaction.name to all lowercase
 			var foundInName = transaction.name.toLowerCase().indexOf(searchString) > -1;
 			var foundInFor = transaction.for.indexOf(searchString) > -1;
 			var foundInDate = transaction.date.indexOf(searchString) > -1;
